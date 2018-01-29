@@ -40,7 +40,7 @@ def over?(board)
   full?(board) || won?(board) != nil || draw?(board) == true
 end
 
-def winner?(board)
+def winner (board)
   winning_player = board[win_combo[0][0]]
   if won?(board) && winning_player == "X"
     return "X"
